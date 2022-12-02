@@ -1,0 +1,333 @@
+/* Fuentes de Google */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 100;
+}
+
+:root {
+    --primary-black-color: #212121;
+    --primary-text-color: #757575;
+    --primary-white-color: #ffffff;
+    --accent-color: #2196f3;
+    --accent-color-hover: #188ce8;
+    --background-black: #21303a;
+    --text-white-opacity: #ffffff99;
+    --button-primary-hover: #188ce8
+    --container-padding: calc((100% - 1200px) / 2);
+
+    --background-black-1: #21303a;
+    --background-black-2: #2f303A;
+
+    --gray-1: #f5f4fa;
+    --gray-2: #afb1b8;
+    --black-1: #000000;
+
+    --background-black-240Perc: hsla(235, 10%, 21%, 0.4);
+    --primary-white-60Perc: hsla(0, 0%, 100%, 0.6);
+    --primary-white-10Perc: hsla(0, 0%, 100%, 0.1);
+}
+* {
+    margin: 0px;
+    padding: 0xpx;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+section {
+    padding: 94px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Seccion de beneficios del index */
+.benefits{
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.benefits li{
+    list-style: none;
+    width: 290px;
+    
+}
+
+.benefits li .title{
+    height: 30px;
+    text-transform: uppercase;
+    color: var(--primary-black-color);
+}
+
+.benefits .title {
+    color: var(--primary-black-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1em;
+}
+
+.benefits .description {
+    line-height: 1.7em;
+    
+}
+
+/* Sección a que nos dedicamos  */
+.what-we-do-section .container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.what-we-do-section .container ul li {
+    list-style: none;
+    width: 500px;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+.section > h2 {
+    color: var(--primary-black-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1em;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+.list {
+    list-style: none;
+}
+
+.button-primary {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8em;
+    text-transform: capitalize;
+
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.button-primary:hover {
+    background-color: var(--accent-color-hover);
+}
+
+.container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seccion de nuestro equipo */
+.team-section {
+    background-color: var(--gray-1);
+    
+}
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+}
+
+.team li {
+    background-color: var(--primary-white-color-color);
+    text-align: center;
+    list-style: none;
+}
+
+.team h2 {
+    font-size: 16px;
+    color: var(--primary-black-color);
+    line-height: 2.5em;
+}
+
+.team p {
+    color: var(--primary-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px 
+    rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección del encabezado */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.logo {
+    padding: 40px ;
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-decoration: none;
+    
+}
+
+header nav .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+.nav-menu .page {
+    color: var(--primary-black-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1em;
+
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.contacts-menu {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+.contacts-menu .item {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.nav-menu .page:hover,
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .item:hover,
+.contacts-menu .item:focus {
+    color: var(--accent-color);
+    
+}
+
+/* Sección del Hero */
+.hero {
+   
+    background-color: var(--background-black-2);
+    text-align: center;   
+}
+
+.hero .hero-title {
+    color: var(--primary-white-color);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.3em;
+    text-transform: capitalize;   
+    
+}
+
+/* Sección del portafolio  */
+.portfolio .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.portfolio .menu li button {
+    border: none;
+    outline: none;
+    color: var(--primary-black-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    padding: 10px 30px;
+
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    
+}
+
+.portfolio .list li button:hover,
+.portfolio .list li button.current {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.portfolio .cards li {
+    margin-bottom: 20px;
+    width: 360px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.portfolio .cards li a h2 {
+    color: var(--primary-black-color);
+    padding: 15px;
+}
+.portfolio .cards li a p {
+    color: var(--primary-black-color);
+    font-size: 16px;
+    padding: 15px;
+}
+
+/* Sección del pie de página */
+footer {
+    background-color: var(--background-black-2);
+    
+}
+
+
+
+address .contact {
+    display: block;
+    color: var(--text-white-opacity);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    padding: 5px;
+}
+
+address .contact:hover {
+    color: var(--primary-white-color);
+}
