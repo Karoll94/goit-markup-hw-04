@@ -158,7 +158,6 @@ a {
     color: var(--primary-black-color);
     font-size: 16px;
     font-weight: 500px;
-    /* padding: 30px 0; */
     text-align: center;
   }
   .team-section .container .team-cards {
@@ -174,6 +173,7 @@ a {
     list-style: none;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px
      rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+     padding-bottom: 10px;
   }
   
   .team-section .container .team-cards li h3 {
@@ -216,8 +216,12 @@ a {
   .team-section .container .team-cards li ul li:hover a .icon {
     fill: var(--primary-white-color);
   }
-  
-
+  .team-section .container .team-cards li ul li a:focus {
+    background-color: var(--accent-color);
+  }
+  .team-section .container .team-cards li ul li a:focus .icon {
+    fill: var(--primary-white-color);
+  }
 /* Sección del encabezado */
 header {
     height: 80px;
@@ -307,13 +311,16 @@ header .container .contacts-menu li .item:hover .icon {
 
 /* Sección del Hero */
 .hero {
-   
-    background-image: url("../images/img_hero.jpg");
-    /* background-blend-mode: overlay; */
-    /* background-repeat: no-repeat; */
-    padding: 200px var(--container-padding);
-    /* position: relative; */
-    text-align: center;  
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/img_hero.jpg");
+    padding: 214px;
+    text-align: center; 
+    margin: auto; 
+    max-width: 1600px;
 }
 
 .hero .hero-title {
@@ -322,7 +329,8 @@ header .container .contacts-menu li .item:hover .icon {
     font-weight: 900;
     line-height: 1.3em;
     text-transform: capitalize;   
-    padding: 20%;
+    padding: 0 20%;
+    margin-bottom: 40px;
 }
 
 
@@ -407,6 +415,10 @@ header .container .contacts-menu li .item:hover .icon {
 }
 
 .customers .container ul li:hover {
+  background-color: var(--accent-color);
+}
+
+.customers .container ul li a:focus {
   background-color: var(--accent-color);
 }
 
@@ -496,3 +508,8 @@ footer {
   footer .container aside ul li:hover {
       background-color: var(--accent-color);
   }
+
+  footer .container aside ul li a:focus {
+    background-color: var(--accent-color);
+  } 
+  
